@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Форма обратной связи</title>
+	<link rel="stylesheet" href="style.css" ">
+</head>
+<body>
+	<div class="container">
+		<h1>Форма обратной связи</h1>
+		<div class="feedback__form">
+			<form action="server.php" method="POST" id="feedback">
+				<div class="feedback__form">
+					<label for="user-name">
+					<input id="user-name" class="feedback__form-input" name="user-name" type="text" placeholder="Имя" required>
+					</label>
+					<label for="user-phone">
+					<input id="user-phone" class="feedback__form-input" name="user-phone" type="text" placeholder="Телефон" required>
+					</label>
+				</div>
+				<div class="feedback__form">
+					<label for="user-message">
+					<textarea id="user-message" class="feedback__form-textarea" name="user-message" placeholder="Сообщение"></textarea>
+					</label>
+				</div>
+				<div class="feedback__form">
+					<label for="user-menu" class="feedback__form-input">
+						<select id="user-menu" name="user-menu" size="1" class="feedback__form-input">
+							<option value="Один">Первая услуга</option>
+							<option value="Два">Вторая услуга</option>
+							<option value="Три">Третья услуга</option>
+							<option value="Четыре">Четвертая услуга</option>
+							<option value="Пять">Пятая услуга</option>
+						</select>
+					</label>
+					<label for="user-disturb">Получать рассылку
+					<input type="checkbox" id="user-disturb" name="user-disturb" value="1">
+					</label>
+				</div>			
+				<button type="submit" class="btn">Отправить</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
